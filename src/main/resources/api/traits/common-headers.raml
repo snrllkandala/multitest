@@ -1,0 +1,24 @@
+
+#%RAML 1.0 Trait
+usage: trait to secure an API with client id enforcement
+headers:
+  client_id:
+    type: string
+    required: true
+    example: "96c884d3-"
+    minLength: 4  
+  client_secret:
+    type: string
+    example: "96c884d3-" 
+    minLength: 4
+    required: true
+  device_type:
+    type: string
+    example: "sbibank"
+    minLength: 7
+    required: true
+  client_operation:
+    type: string
+    example: "accountbalance"
+    minLength: 4
+    required: true

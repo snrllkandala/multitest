@@ -1,0 +1,41 @@
+#%RAML 1.0 DataType
+
+type: object
+properties:
+  fundTransferDetl:
+    type: object
+    properties:
+      debitAccountId:
+        type: string
+        required: true
+      amount:
+        type: string
+        required: true
+      sourceCurrency:
+        type: string
+        required: true
+      destinationCurrency:
+        type: string
+        required: true
+      transferCurrency:
+        type: string
+        required: true
+      comments:
+        type: string
+        required: true
+      purpose:
+        type: string
+        required: true
+      transferType:
+        type: string
+        required: true
+      valueDate:
+        type: string
+        required: true
+      partyId:
+        type: string
+        required: true
+      referenceId:
+        type: string
+        required: true
+      

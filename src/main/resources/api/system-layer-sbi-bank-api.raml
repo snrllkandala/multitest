@@ -1,0 +1,31 @@
+#%RAML 1.0
+title: s-gpay-sbi-bank-apikklllakalalalaall
+
+description: System Layer for sbi bank
+
+
+uses:
+  requestresponsestypes: libraries/types.raml
+
+  
+
+traits:
+  gpay-errors: !include traits/error-trai.raml
+  common-headers: !include traits/common-headers.raml
+
+
+/account/balance:
+  post:
+    description: api to extract the balance for account
+    is: [common-headers,gpay-errors]
+    body:
+      application/json:
+        type: requestresponsestypes.account-balance-request 
+        example:   !include examples/balance-enquiry-request.json
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/balance-enquiry-response.json
+
+

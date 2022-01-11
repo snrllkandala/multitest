@@ -1,0 +1,33 @@
+#%RAML 1.0 DataType
+
+displayName: Account balance
+
+type: object
+properties:
+  getAccountBalanceReq:
+    type: object
+    required: true
+    properties:
+      Header:
+        type: object
+        required: true
+        properties:
+          AccountName:
+            type: string
+            minLength: 3
+            maxLength: 6
+            required: true
+          ReferenceNumber:
+            type: string
+            required: true
+      Body:
+        type: object
+        required:  true
+        properties:
+          AcctNums:
+            type: array
+            
+            required: true
+            
+
+    
