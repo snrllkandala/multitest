@@ -1,0 +1,16 @@
+{
+  "fundTransferDetl": {
+    "debitAccountId": "string",
+    "payeeId": "string",
+    "amount": "0",
+    "sourceCurrency": "string",
+    "destinationCurrency": "string",
+    "transferCurrency": "string",
+    "comments": "string",
+    "purpose": "string",
+    "transferType": "INSTANT",
+    "valueDate": "2021-02-03",
+    "partyId": "string",
+    "referenceId": "string"
+  }
+}

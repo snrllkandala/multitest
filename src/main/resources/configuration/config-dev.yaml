@@ -1,0 +1,6 @@
+http:
+  host: "localhost"
+  port: "8081"
+request:
+   host: "sbi-bank-api.us-e2.cloudhub.io"
+   path: "/sbi/core/banking/account/balance"

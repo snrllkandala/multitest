@@ -1,0 +1,25 @@
+  {
+  "getAccountBalanceRes": {
+    "Header": {
+      "AccountBankName": "ANDHRABANK",
+      "ReferenceNumber": "23456",
+      "Status": "Success",
+      "Error_Cde": "200",
+      "Error_Desc": "Success"
+    },
+    "Body": {
+      "BalAmt": [
+        {
+          "SequenceNum": "1",
+          "AccountStatus": "ACTIVE",
+          "CustomerFullName": "RAJA",
+          "AccountType": "CURRENT ACCOUNT",
+          "amountValue": "63.64149999999999",
+          "currencyCode": "INR",
+          "Status": "Success",
+          "StatusDetail": "Success"
+        }
+      ]
+    }
+  }
+}
